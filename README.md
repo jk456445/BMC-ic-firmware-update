@@ -26,7 +26,7 @@ Execution Steps
 
 2.Run the updater:
 
-  ./bmc_updater.sh <BMC_IP> <FIRMWARE_IMAGE>
+  ./bmc_updater_fw_general.sh <BMC_IP> <FIRMWARE_IMAGE>
 
 🛠️ Technical Implementation
 
