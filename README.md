@@ -1,7 +1,8 @@
 BMC Component Maintenance Framework
+
 A lightweight automation framework for managing hardware components via BMC CoAP APIs. This project demonstrates the automation of hardware register manipulation, secure firmware deployment, and asynchronous task tracking.
 
-✨ Key Features
+Key Features
 Hardware Protection Toggle: Automates the unlocking of hardware write-protection via I2C/GPIO Expander APIs.
 
 Secure Deployment: Implements sha1sum verification to ensure firmware integrity during transfer.
@@ -10,16 +11,13 @@ Async Task Polling: Handles long-running flash tasks with a robust polling logic
 
 Modular Config: Decouples hardware addresses (Bus/Slave Addr) from logic for high portability.
 
-🚀 Usage
-Bash
-chmod +x bmc_updater.sh
-./bmc_updater.sh <BMC_IP> <FIRMWARE_IMAGE>
-🛠 Tech Stack
-Bash: Core automation and flow control.
+Usage
+Pre-configuration Required: You must update the Bus, Address, Register, and API paths in the script's config section to match your specific hardware environment before use.
 
-CoAP: Low-overhead network communication with BMC.
+In terminal:
+1. chmod +x bmc_updater.sh
+2. ./bmc_updater.sh <BMC_IP> <FIRMWARE_IMAGE>
 
-JSON Parsing: Status analysis from API responses.
 
 ⚠️ Disclaimer
 This project is for technical demonstration only. All API paths, Bus IDs, and Register addresses have been de-identified and replaced with generic values for security purposes.
