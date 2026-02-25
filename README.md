@@ -1,7 +1,11 @@
 🛠️ BMC Component Maintenance Framework
-A lightweight automation framework for managing hardware components via BMC CoAP APIs. This project demonstrates professional-grade automation for hardware register manipulation, secure firmware deployment, and asynchronous task tracking.
+
+A lightweight automation framework for managing hardware components via BMC CoAP APIs. 
+
+This project demonstrates professional-grade automation for hardware register manipulation, secure firmware deployment, and asynchronous task tracking.
 
 ✨ Key Features
+
 🔒 Hardware Protection Toggle: Automates the unlocking of hardware write-protection via I2C/GPIO Expander APIs before flashing.
 
 🛡️ Secure Deployment: Implements sha1sum verification to ensure end-to-end firmware integrity during transfer.
@@ -11,7 +15,7 @@ A lightweight automation framework for managing hardware components via BMC CoAP
 🧩 Modular Configuration: Decouples hardware addresses (Bus/Slave Addr) from logic for high portability across different platforms.
 
 🚀 Usage
-[!IMPORTANT]
+
 Pre-configuration Required: You must update the Bus, Address, Register, and API paths in the script's config section to match your specific hardware environment before execution.
 
 Execution Steps
